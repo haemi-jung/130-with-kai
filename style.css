@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+h1,h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+}
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas:
+        "a b c";
+    min-height: 100vh;
+    grid-column-gap: 10px; 
+}
+.tutorials {
+    grid-area: a;
+}
+.homework {
+    grid-area: b;
+}
+.inspiration {
+    grid-area: c;
+}
+
+header, section {
+    padding: 20px;
+}
+header {
+    background-color: #E4C1F9;
+}
+
+p, li {
+    line-height: 1.7em;
+}
+
+#inspiration {
+    background-color: #F4F5F6;
+    color: #000;
+}
